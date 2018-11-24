@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#9ccc65"
+    android:fitsSystemWindows="true">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="193dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@color/bluelight"
+        android:fontFamily="@font/actor"
+        android:text="Enter Investor Name:"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/investorAmountTextfield"
+        android:layout_centerHorizontal="true"
+        android:background="@color/bluelight"
+        android:fontFamily="@font/actor"
+        android:text="Enter Investment Amount:"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="229dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="169dp"
+        android:background="@color/bluelight"
+        android:text="Choose Mutual Fund Type:"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/investorNameTextfield"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="99dp"
+        android:ems="10"
+        android:fontFamily="@font/actor"
+        android:hint="Input"
+        android:inputType="textPersonName"
+        android:textAlignment="viewStart"
+        android:textStyle="italic"
+        android:typeface="sans" />
+
+    <RadioGroup
+        android:id="@+id/mutualFundTypeRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="138dp"
+
+
+        android:layout_centerInParent="true">
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/actor"
+            android:text="SALBF (Save and Learn Balanced Fund)"
+            android:textAlignment="viewStart"
+            android:textSize="14sp"
+            android:typeface="sans" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:fontFamily="@font/actor"
+            android:text="SAFIF (Save and Learn Fixed Income Fund)"
+            android:textAlignment="viewStart"
+            android:textSize="14sp"
+            android:typeface="sans" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/actor"
+            android:text="SALEF (Save and Learn Equity Fund)"
+            android:textAlignment="viewStart"
+            android:textSize="14sp"
+            android:typeface="sans" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/investorAmountTextfield"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="119dp"
+        android:ems="10"
+        android:fontFamily="@font/actor"
+        android:hint="Input"
+        android:inputType="number"
+        android:textAlignment="viewStart"
+        android:textStyle="italic"
+        android:typeface="sans" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dp"
+        android:background="#558b2f"
+        android:text="SUBMIT"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+
+</RelativeLayout>
